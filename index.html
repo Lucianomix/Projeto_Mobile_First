@@ -10,7 +10,6 @@
         <meta name="author" content="Luciano Suzarti">
 
         <link rel="stylesheet" href="estilo.css">
-        <script src="funcoes.js">
         <link rel="icon" href="img/favicon.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -112,5 +111,17 @@
             </div>
             <p class="copyright">Copyright &copy; SUZARTI SOLUÇÕES 2018 - Todos os direitos Reservados.</p>
         </footer>
+
+         <!--  JQUERY para controlar os eventos dos botões -->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+        <script>
+          $(".btn-menu").click(function(){
+          $(".menu").show();
+         });
+          $(".btn-fechar").click(function(){
+          $(".menu").hide();
+         });
+        </script>
 
     </body>
