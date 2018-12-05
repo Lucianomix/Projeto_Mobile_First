@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina_inicial</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta name="description" content="Aplicação Mobile-First">
+        <meta name="keywords" content="este é um site responsivo">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Luciano Suzarti">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="icon" href="img/favicon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <a href="index.html"><h1 class="logo">Luciano Suzarti - Soluções em desenvolvimento Web</h1></a>
+                <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+
+                <nav class="menu">
+                    <button class="btn-fechar">Fechar</button>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="banner">
+                <div class="titulo">
+                    <h2>Conheça nossas tecnologias</h2>
+                    <h3>Com as nossas tecnologias iremos lhe ofereçer o que há de mais novo no mercado</h3>
+                </div>
+                <div class="botoes">
+                    <button class="btn btn-cadastrar combo_radius">Cadastrar &nbsp;&nbsp;&nbsp; &#10132;</button>
+                    <button class="btn btn-sobre combo_radius">Sobre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &#10068;
+                    </button>
+                </div>
+            </div>
+
+        <main class="servicos">
+
+            <article class="servico"> <!--Artigo 1-->
+                <a href="#"><img src="img/linguagensWeb.png" alt="Imagem das tecnologias usadas em nossa empresa"></a>
+                <div class="inner">
+                    <a href="#">Vantagens de ser nosso cliente</a>
+                    <h4>Suporte 24 horas</h4>
+                    <p>Ao fechar negócio conosco, além de ter a certeza que está adquirindo o melhor serviço do mercado tecnológico, terá nosso apoio 24 horas por dia caso ocorra eventuais problemas.</p>
+                </div>
+            </article>
+            <article class="servico"> <!--Artigo 2-->
+                <a href="#"><img src="img/responsive.jpg" alt="Imagem das tecnologias usadas em nossa empresa"></a>
+                <div class="inner">
+                    <a href="#">Aplicações Responsivas</a>
+                    <h4>Trabalhe em qualquer resolução de tela</h4>
+                    <p>Nossas aplicações atendem suas necessidades em qualquer resolução de tela Desktop, Tablet ou Smartphone.</p>
+                </div>
+            </article>
+
+            <article class="servico"> <!--Artigo 3-->
+                <a href="#"><img src="img/cloud.jpg" alt="Imagem das tecnologias usadas em nossa empresa"></a>
+                <div class="inner">
+                    <a href="#">Armazenamento em nuvem</a>
+                    <h4>Conheça a tecnologia Cloud Computing</h4>
+                    <p>Acesse os dados do seu sistema quando e onde quiser com a computação em nuvem. <br>
+                        Mas o que é computação em nuvem?<br>
+                        É um servidor que fica em algum lugar bem escondido armazenando e garantindo a segurança dos dados dos clientes, sendo assim você não irá se preocupar em ficar fazendo Backup em disco local, além de contar com um espaço de armazenamento inlimitado.
+                    </p>
+                </div>
+            </article>
+
+            <article class="servico"> <!--Artigo 4-->
+                <a href="#"><img src="img/RedesSociais.png" alt="Imagem das tecnologias usadas em nossa empresa"></a>
+                <div class="inner">
+                    <a href="#">Atendimento também através das redes sociais</a>
+                    <h4>Contate-nos sempre que precisar</h4>
+                    <p><a href="#">Curta nossa página no facebook</a> <br>
+                       <a href="#">Siga-nos no Twitter</a> ou no <a href="#">Instagran</a> <br>
+                        <a href="#">Mande mensagens ou sugestões em nosso E-mail</a> <br>
+                        <a href="#">Ou se preferir assista nossos vídeos e tutoriais no YouTube</a>
+                    </p>
+                </div>
+            </article>
+        </main>
+
+           <!-- NEWSLETTER -->
+
+        <section class="newsletter">
+            <h2>Increva-se agora!</h2>
+            <h3>Receba novidades, dicas e muito mais!</h3>
+
+            <form>
+                <input class="combo_radius" type="email" name="email" placeholder="Seu email aqui...">
+                <button class="combo_radius">Cadastrar</button>
+            </form>
+
+        </section>
+
+             <!-- RODAPÉ -->
+
+        <footer class="rodape">
+            <div class="redes-sociais">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <p class="copyright">Copyright &copy; SUZARTI SOLUÇÕES 2018 - Todos os direitos Reservados.</p>
+        </footer>
+
+
+             <!--  JQUERY para controlar os eventos dos botões -->
+                <script src="http://code.jquery.com/jquery-1.12.0.min.js">
+                </script>
+
+                <script>
+                   $(".btn-menu").click(function(){
+                       $(".menu").show();
+                   });
+                    $(".btn-fechar").click(function(){
+                        $(".menu").hide();
+                    });
+                </script>
+    </body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Serviços</title>
+        <link rel="icon" href="img/favicon.png"/>
+        <meta charset="utf-8">
+
+        <style>
+            * {margin: 0; padding: 0;}
+
+            .bloco {width: 100vw; height: 100vh; justify-content: center; align-items: center; display: flex;}
+
+            .links {width: 100%; height: 50px; position: fixed; display:flex;}
+
+            .links label {padding: 10px 0; flex-grow: 1; cursor: pointer; transition: all .4s;
+            text-align: center; font-family: "arial"; font-size: 100%; color: #000;}
+
+            .links label:hover {background-color: rgba(255,255,255,.2);}
+
+            .slide {display: flex; width: 100vw; height: 100vh; overflow: hidden;}
+
+
+
+            .sessoes {transition: all .4s;}
+
+            #javascript:checked ~ .sessoes {margin-top: -100vh;}
+            #bootstrap checked ~ .sessoes {margin-top: -200vh;}
+            #git checked ~ .sessoes {margin-top: -300vh;}
+
+            #B-html5 {background-color: #7fbd42;}
+            #B-javascript {background-color: #5b952b;}
+            #B-bootstrap {background-color: #7f7f7f;}
+            #B-php {background-color: #3159ff;}
+            #B-sql {background-color: #b6fa25;}
+            #B-git {background-color: #ff0000;}
+        </style>
+    </head>
+
+    <body>
+        <nav class="links">
+            <label for="html5">HTML5 e CSS3</label>
+            <label for="javascript">JavaScript</label>
+            <label for="bootstrap">Bootstrap</label>
+            <label for="php">PHP</label>
+            <label for="sql">SQL/SQLserver</label>
+            <label for="git">Git</label>
+        </nav>
+
+        <div class="slide">
+            <input type="radio" name="grupo" id="html5"  checked="true">
+            <input type="radio" name="grupo" id="javascript">
+            <input type="radio" name="grupo" id="bootstrap">
+            <input type="radio" name="grupo" id="php">
+            <input type="radio" name="grupo" id="sql">
+            <input type="radio" name="grupo" id="git">
+        </div>
+
+        <section class="sessoes">
+            <section class="bloco" id="B-html5"></section>
+            <section class="bloco" id="B-javascript"></section>
+            <section class="bloco" id="B-bootstrap"></section>
+            <section class="bloco" id="B-php"></section>
+            <section class="bloco" id="B-sql"></section>
+            <section class="bloco" id="B-git"></section>
+        </section>
+
+    </body>
