@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mande_sua_mensagem_aqui</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="icon" href="img/favicon.png">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body>
+
+        <form action="https://formspree.io/lucianotecinfo2017@gmail.com" method="POST">
+            <input type="hidden" name="_language" value="pt-BR">
+            <input type="hidden" name="_subject" value="Contato: E-Molduras">
+
+            <fieldset> <legend>Identificação</legend>
+                Seu nome: <input type="text" name="name"> <br><br>
+                Seu email: <input type="email" name="_replyto"> <br><br>
+            </fieldset>
+
+            <fieldset> <legend>Sua mensagem</legend>
+                <textarea name="mensagem" placeholder="Escreva aqui..."></textarea>
+            </fieldset>
+
+            <button type="submit" value="Send">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+
+    </body>
+
+</html>
