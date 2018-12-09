@@ -172,3 +172,10 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
     .logo {margin-left: -50px;}
     .servico {height: 550px;}
 }
+
+/*===========ESTILO DA PAGINA DE MENSAGEM============*/
+
+.campo-texto{max-width: 500px;
+             margin: auto;
+			 border: 3px solid #73AD21;
+}
