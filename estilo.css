@@ -31,7 +31,7 @@ img {max-width: 100%;}
 
 .logo {width: 50px; height: 50px; float: left; background: url(img/imagem1.png) center center/50px no-repeat; font-size: 0;}
 
-.btn-menu {width: 50px; height: 50px; float: right; text-align: center; color: #fff; border-radius: 50px; cursor: pointer; background: linear-gradient(to right,#ce2e3c,#da6709); margin-right: 15px;}
+.btn-menu {width: 50px; height: 50px; float: right; text-align: center; font-size: 2em; font-weight: 900; color: #fff; border-radius: 50px; cursor: pointer; background: linear-gradient(to right,#ce2e3c,#da6709); margin-right: 15px;}
 
 /*==========MENU==========*/
 
