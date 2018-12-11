@@ -175,7 +175,8 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
 
 /*===========ESTILO DA PAGINA DE MENSAGEM============*/
 
-.campo-texto{max-width: 500px;
-             margin: auto;
-			 border: 3px solid #73AD21;
-}
+.campo-texto{max-width: 500%; margin: auto; border: 2px solid #606060;}
+fieldset {background: rgba(0,255,255,0.5); border: outset; #606060; margin: 20px 10px 10px 10px}
+legend {font-weight: 700; font-size: 14pt;}
+button {margin-left: 10px; font-family: fantasy; border:  outset; color: #606060;}
+textarea {padding: 5px;}
