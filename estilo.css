@@ -27,7 +27,7 @@ img {max-width: 100%;}
 
 /*==========CABECALHO==========*/
 
-.cabecalho {width: 100%; float: left; padding: 3% 4%;}
+.cabecalho {width: 100%; float: left; padding: 3% 4%; position: fixed; background: linear-gradient(to right,#ce2e3c,#0080ff,#fff);}
 
 .logo {width: 50px; height: 50px; float: left; background: url(img/imagem1.png) center center/50px no-repeat; font-size: 0;}
 
@@ -78,7 +78,7 @@ img {max-width: 100%;}
 
 /*==========NEWSLETTER==========*/
 
-.newsletter {width: 100%; float: left; text-align: center; padding: 3% 4%; background-color: #130400;}
+.newsletter {width: 100%; float: left; text-align: center; padding: 3% 4%; background-color: #130400; border-radius: 7px;}
 
 .newsletter h2 {font-size: 1.5em; color: #fff; font-weight: 700;}
 
@@ -92,7 +92,7 @@ img {max-width: 100%;}
 
 /*==========RODAPÉ==========*/
 
-.rodape {width: 100%; float: left; padding: 3% 4%; text-align: center; background: linear-gradient(to right,#ce2e3c,#da6709);}
+.rodape {width: 100%; float: left; padding: 3% 4%; text-align: center; background: linear-gradient(to right,#ce2e3c,#0080ff,#fff);}
 
 .redes-sociais a {font-size: 1.5em; color: rgba(255,255,255,0.5);}
 
@@ -105,10 +105,21 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
 */
 
 /*==========MOBILE FIRST==========*/
+
+/*==========SMARTPHONES até 400px==========*/
+
+@media screen and (max-width: 400px) {
+    .logo {float: left; margin-left: 10px;}
+    .banner {max-width: 92%; float: left;}
+    .servicos {max-width: 100%; float: left;}
+    .newsletter {max-width: 92%; float: left; margin-left: 15px; margin-bottom: 10px;}
+    .newsletter button {float: left; margin-left: 0px;}
+
+}
 /*==========SMARTPHONES 480==========*/
 
-@media screen and (min-width: 480px) {
-    .logo {width: 150px; height: 50px; margin-left: ; background: url(img/logo480.png) center/150px no-repeat;}
+@media screen and (min-width: 400px) {
+    .logo {width: 150px; height: 50px; margin-left: 20px; background: url(img/logo480.png) center/150px no-repeat;}
 
     .banner {margin-left: 20px;}
 }
@@ -143,9 +154,11 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
 
     .botoes {width: 30%; float: right; margin-right: 2%;}
 
-    .servicos {width: 99%;}
+    .servicos {width: 100%; margin-left: 10px}
 
     .newsletter button {width: 29%; padding: 0%; float: right; margin-top: 0; height: 70px; text-align:center;}
+
+    .banner {float: left; margin-left: 10px;}
 
     .servico {width: 32%; height: 550px;}
     .servico:nth-child(2) {margin-right: 2%;}
@@ -161,16 +174,25 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
     .banner {width: 91%; margin-left: 55px;}
 }
 
-/*==========TABLET E DESKTOP 1024==========*/
+/*==========TABLET E DESKTOP 1400==========*/
 
-@media screen and (max-width: 1024px) {
-    .banner {margin-left: 0px;}
+@media screen and (min-width: 800px) {
+    .banner {width: 90%; float: left; margin-left: 50px;}
+    .servicos {float: left; margin-left: 50px;}
     .servico {height: 550px;}
+    .newsletter button {width: 28%; padding: 0%; float: right; margin-top: 0; height: 70px; text-align:center;}
+    .newsletter input {width: 70%; padding: 0%; float: left; margin-top: 0; height: 70px; text-align:center; font-size: 14pt;}
 }
-@media screen and (min-width: 1024px) {
-    .banner {margin-left: 50px;}
-    .logo {margin-left: -50px;}
+
+
+/*==========TABLET E DESKTOP 1400==========*/
+
+@media screen and (min-width: 1400px) {
+    .banner {float: left; margin-left: 50px;}
+    .servicos {float: left; margin-left: 50px;}
     .servico {height: 550px;}
+    .newsletter button {width: 28%; padding: 0%; float: right; margin-top: 0; height: 70px; text-align:center;}
+    .newsletter input {width: 70%; padding: 0%; float: left; margin-top: 0; height: 70px; text-align:center; font-size: 14pt;}
 }
 
 /*===========ESTILO DA PAGINA DE MENSAGEM============*/
