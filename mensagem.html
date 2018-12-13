@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="estilo.css">
         <link rel="icon" href="img/favicon.png">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script lang="javascript" src="funcoes.js"></script>
     </head>
 
     <body>
@@ -18,22 +19,23 @@
                 <label for="idNome">Seu nome:<sup>*</sup></label> <input class="campo-texto" type="text" id="idNome" name="Nome" oninvalid="alert('O campo nome precisa ser preenchido!')" placeholder="nome aqui..." required> <br><br>
                 <label for="idContato">Seu email:<sup>*</sup></label> <input class="campo-texto" type="email" id="idContato" name="Contato" oninvalid="alert('O campo email precisa ser preenchido!')" placeholder="email aqui..." required>
                 <br><br>
-                Gênero: <select class="campo-texto" name="genero">
+                <label for="idopcao">Gênero:</label> <input list="opcao" id="idopcao"><datalist class="campo-texto" name="genero" id="opcao">
                 <option value="" selected="selected"></option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="outros">Outros</option>
-                        </select>
+                <option value="Masculino"></option>
+                <option value="Feminino"></option>
+                <option value="Outros"></option>
+                        </datalist>
                 <br><br>
 
             </fieldset>
 
-            <fieldset> <legend>Sua mensagem</legend>
-                <textarea class="campo-texto" name="Mensagem"  rows="10" cols="30" placeholder="Escreva aqui..."></textarea>
+            <fieldset> <legend>Sua mensagem</legend> <br>
+                <div id="divContagem">500 Caracteres disponíveis:</div>
+                <textarea class="campo-texto" id="campoTexto" name="campoTexto" onclick="contaCaracteres(this)" onkeydown="contaCaracteres(this)" onkeyup="contaCaracteres(this)"  rows="10" cols="30" placeholder="Escreva aqui..."></textarea>
             </fieldset>
 
             <button type="submit" value="Send">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="reset" onclick="contaCaracteres(this)">Limpar</button>
         </form>
 
     </body>

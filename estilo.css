@@ -203,3 +203,5 @@ fieldset {background: rgba(0,255,255,0.5); border: outset; #606060; margin: 20px
 legend {font-weight: 700; font-size: 14pt;}
 button {margin-left: 10px; font-family: fantasy; border:  outset; color: #606060;}
 textarea {padding: 5px; margin: auto; width: 100%; height: 100px;}
+
+#divContagem {color: #ff0000; font-weight: 700; font-size: .8em;}
