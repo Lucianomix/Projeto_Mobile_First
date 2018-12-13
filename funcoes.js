@@ -1,12 +1,16 @@
+function abreMenu(){
+        document.getElementById("menu").show();
+}
 
 <!--  JQUERY para controlar os eventos dos botões -->
 
-       document.getElementById(".btn-menu").click(function(){
+  /*     document.getElementById(".btn-menu").click(function(){
        $(".menu").show();
       });
         $(".btn-fechar").click(function(){
         $(".menu").hide();
       });
+*/
 
 <!--Função para contar os caracteres das mensagens-->
 

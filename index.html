@@ -22,20 +22,28 @@
     <body>
         <header class="cabecalho">
             <a href="index.html"><h1 class="logo">Luciano Suzarti - Soluções em desenvolvimento Web</h1></a>
-                <button class="btn-menu">+</button>
+        </header>
 
-                <nav class="menu">
+            <input type="checkbox" id="check">
+            <label id="icone-menu" for="check"><img id="img-menu" src="img/btn_menu.png"></label>
+
+               <!-- <nav class="menu">
                     <button class="btn-fechar">Fechar</button>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Quem somos</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
+                    <ul> -->
+                <div class="barra">
+                  <nav>
+                      <ul class="link">
+                        <li><a class="link" href="index.html">Home</a></li>
+                        <li><a class="link" href="#">Clientes</a></li>
+                        <li><a class="link" href="servicos.html">Serviços</a></li>
+                        <li><a class="link" href="#">Blog</a></li>
+                        <li><a class="link" href="#">Quem somos</a></li>
+                        <li><a class="link" href="#">Contatos</a></li>
+                      </ul>
                 </nav>
-            </header>
+            </div>
+
+        <section class="corpo">
             <div class="banner">
                 <div class="titulo">
                     <h2>Conheça nossas tecnologias</h2>
@@ -105,6 +113,7 @@
             </form>
 
         </section>
+    </section>
 
              <!-- RODAPÉ -->
 
@@ -118,7 +127,7 @@
         </footer>
 
          <!--  JQUERY para controlar os eventos dos botões -->
-        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+       <!-- <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
         <script>
           $(".btn-menu").click(function(){
@@ -128,6 +137,7 @@
           $(".menu").hide();
          });
         </script>
+       -->
 
     </body>
 </html>
