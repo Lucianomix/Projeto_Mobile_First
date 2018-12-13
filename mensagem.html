@@ -15,8 +15,17 @@
             <input type="hidden" name="_subject" value="Cliente: Suzarti Soluções">
 
             <fieldset> <legend>Identificação</legend>
-                <label for="idNome">Seu nome:</label> <input class="campo-texto" type="text" id="idNome" name="Nome" placeholder="nome aqui..."> <br><br>
-                <label for="idContato">Seu email:</label> <input class="campo-texto" type="email" id="idContato" name="Contato" placeholder="email aqui..."> <br><br>
+                <label for="idNome">Seu nome:<sup>*</sup></label> <input class="campo-texto" type="text" id="idNome" name="Nome" oninvalid="alert('O campo nome precisa ser preenchido!')" placeholder="nome aqui..." required> <br><br>
+                <label for="idContato">Seu email:<sup>*</sup></label> <input class="campo-texto" type="email" id="idContato" name="Contato" oninvalid="alert('O campo email precisa ser preenchido!')" placeholder="email aqui..." required>
+                <br><br>
+                Gênero: <select class="campo-texto" name="genero">
+                <option value="" selected="selected"></option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outros">Outros</option>
+                        </select>
+                <br><br>
+
             </fieldset>
 
             <fieldset> <legend>Sua mensagem</legend>
