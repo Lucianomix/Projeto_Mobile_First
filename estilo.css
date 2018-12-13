@@ -40,7 +40,7 @@ img {max-width: 100%;}
 */
 /*==========MENU==========*/
 
-.barra {width: 300px; height: 500px;background-color: rgba(16,16,16,.5); transition: all .2s linear; float: right; margin-right: -100px; margin-top: 90px;}
+.barra {width: 300px; height: 0px;background-color: rgba(16,16,16,.5); transition: all .2s linear; float: right; margin-right: -100px; margin-top: 90px;}
 
 nav {width: 100%;}
 
@@ -62,7 +62,7 @@ transition-delay: 2s;}
 .corpo {position: relative;}
 /*==========BANNER==========*/
 
-.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 160px;}
+.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 500px;}
 
 .banner h2 {font-size: 2.5em; color: #fff; font-weight: 700;}
 .banner h3 {font-size: 1.5em; color: #fff; font-weight: 700; margin-top: 2%;}
