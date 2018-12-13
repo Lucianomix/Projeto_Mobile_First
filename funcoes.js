@@ -15,7 +15,7 @@
       var limite = 500;
       var campo = campoPassado.value.length;
       var maxlenght = document.getElementById("campoTexto").setAttribute("maxlenght", limite);
-      var divContagem = document.getElementById("divContagem");
+      var Contagem = document.getElementById("idContagem");
       var restante = limite - campo;
-      divContagem.innerHTML = restante;
+      Contagem.innerHTML = restante;
 }
