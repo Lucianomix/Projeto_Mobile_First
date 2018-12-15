@@ -27,29 +27,30 @@ img {max-width: 100%;}
 
 /*==========CABECALHO==========*/
 
-.cabecalho {width: 100%; float: left; padding: 3% 4%; background: linear-gradient(to right,#ce2e3c,#0080ff,#fff); margin-bottom: 50px; position: absolute;}
+.cabecalho {width: 100%; float: left; padding: 3% 4%; background: linear-gradient(to right,#ce2e3c,#0080ff,#fff); margin-bottom: 5px; position: fixed;}
 
-.logo {width: 50px; height: 50px; float: left; background: url(img/imagem1.png) center center/50px no-repeat; font-size: 0;}
+.logo {width: 50px; height: 50px; float: left; background: url(img/imagem1.png) center center/50px no-repeat;}
 
 #check {display: none;}
 
 #icone_menu {float: right; padding: 15px; z-index: 1;}
 
-#img-menu { width: 50px; height: 50px; float: right; margin-left: 90%; margin-top: 10px; position: absolute;}
+#img-menu { width: 50px; height: 50px; float: right; margin-left: 90%; margin-top: 10px; position: fixed;}
 /*.btn-menu {width: 50px; height: 50px; float: right; text-align: center; font-size: 2em; font-weight: 900; color: #fff; border-radius: 50px; cursor: pointer; background: linear-gradient(to right,#ce2e3c,#da6709); margin-right: 15px;}
 */
 /*==========MENU==========*/
 
-.barra {width: 300px; height: 0px;background-color: rgba(16,16,16,.5); transition: all .2s linear; float: right; margin-right: -100px; margin-top: 90px;}
+.barra {width: 300px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-left: 370px; margin-top: 90px; position: absolute; z-index: 1;}
 
 nav {width: 100%;}
 
 nav a {text-decoration: none; display: block; margin-top:  2px;}
 
-.link {background-color: #494950; margin-bottom: 5px; transition: all .2s linear; border-bottom: 2px solid #222; color: #f4f4f9;}
+.link {background-color: rgba(73,73,80,0.6); margin-bottom: 5px; transition: all .2s linear; border-bottom: 2px solid #222; color: #f4f4f9;}
 .link:hover {background-color: #050542;}
 
-.link {padding: 20px; transition: all .2s linear; border-bottom: 2px solid #222; border-color: #fff; list-style-type: none;}
+.link {padding: 20px; transition: all .2s linear; border-bottom: 2px solid #222; border-color: #fff; list-style-type: none; font-size: 20px;}
+.link:hover {font-size: 30px;}
 
 /*EVENTOS DO MENU*/
 #check:checked ~ .barra{transform: translateX(300px);}
@@ -57,12 +58,9 @@ nav a {text-decoration: none; display: block; margin-top:  2px;}
 #check:checked ~ .barra nav a .link{opacity: 1;
 transition-delay: 2s;}
 
-/*===========CORPO===========*/
-
-.corpo {position: relative;}
 /*==========BANNER==========*/
 
-.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 500px;}
+.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 100px;}
 
 .banner h2 {font-size: 2.5em; color: #fff; font-weight: 700;}
 .banner h3 {font-size: 1.5em; color: #fff; font-weight: 700; margin-top: 2%;}
