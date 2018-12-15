@@ -3,6 +3,8 @@
 * {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: times new roman, sans-serif;
 }
 
+.barra{float: right;}
+
 body {background-color: #f5f5f5;}
 
 a {text-decoration: none;}
@@ -40,7 +42,7 @@ img {max-width: 100%;}
 */
 /*==========MENU==========*/
 
-.barra {width: 300px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-left: 370px; margin-top: 90px; position: absolute; z-index: 1;}
+.barra {width: 300px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-left: 370px; margin-top: 90px; position: fixed; z-index: 1;}
 
 nav {width: 100%;}
 
@@ -121,11 +123,18 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
 
 @media screen and (max-width: 400px) {
     .logo {float: left; margin-left: 10px;}
+
     .banner {max-width: 92%; float: left; margin-top: 100px;}
+
     .servicos {max-width: 100%; float: left;}
+
     .newsletter {max-width: 92%; float: left; margin-left: 15px; margin-bottom: 10px;}
+
     .newsletter button {float: left; margin-left: 0px;}
 
+    #img-menu {margin-left: 300px;}
+
+    .barra {float: right; width: 300px;}
 }
 /*==========SMARTPHONES 480==========*/
 
@@ -133,6 +142,8 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
     .logo {width: 150px; height: 50px; margin-left: 20px; background: url(img/logo480.png) center/150px no-repeat;}
 
     .banner {margin-left: 20px;}
+
+    .barra {right: 300px;}
 }
 
 /*==========TABLETS 768==========*/
