@@ -3,7 +3,7 @@
 * {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: times new roman, sans-serif;
 }
 
-.barra{float: right;}
+.barra{float: right; margin-left: 100px;}
 
 body {background-color: #f5f5f5;}
 
@@ -38,11 +38,11 @@ img {max-width: 100%;}
 #icone_menu {float: right; padding: 15px; z-index: 1;}
 
 #img-menu { width: 50px; height: 50px; float: right; margin-left: 90%; margin-top: 10px; position: fixed;}
-/*.btn-menu {width: 50px; height: 50px; float: right; text-align: center; font-size: 2em; font-weight: 900; color: #fff; border-radius: 50px; cursor: pointer; background: linear-gradient(to right,#ce2e3c,#da6709); margin-right: 15px;}
-*/
+.btn-menu {width: 50px; height: 50px; float: right; text-align: center; font-size: 2em; font-weight: 900; color: #fff; border-radius: 50px; cursor: pointer; background: linear-gradient(to right,#ce2e3c,#da6709); margin-right: 15px;}
+
 /*==========MENU==========*/
 
-.barra {width: 300px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-left: 370px; margin-top: 90px; position: fixed; z-index: 1;}
+.barra {width: 200px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-top: 90px; z-index: 1;}
 
 nav {width: 100%;}
 
@@ -55,14 +55,14 @@ nav a {text-decoration: none; display: block; margin-top:  2px;}
 .link:hover {font-size: 30px;}
 
 /*EVENTOS DO MENU*/
-#check:checked ~ .barra{transform: translateX(300px);}
+#check:checked ~ .barra{transform: translateX(200px);}
 
 #check:checked ~ .barra nav a .link{opacity: 1;
 transition-delay: 2s;}
 
 /*==========BANNER==========*/
 
-.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 100px;}
+.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 100px; position: static;}
 
 .banner h2 {font-size: 2.5em; color: #fff; font-weight: 700;}
 .banner h3 {font-size: 1.5em; color: #fff; font-weight: 700; margin-top: 2%;}
@@ -134,7 +134,7 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
 
     #img-menu {margin-left: 300px;}
 
-    .barra {float: right; width: 300px;}
+    .barra {width: 200px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-top: 90px; z-index: 1; position: fixed; margin-left: 200px;}
 }
 /*==========SMARTPHONES 480==========*/
 
