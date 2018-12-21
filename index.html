@@ -15,7 +15,7 @@
         <script lang="javascript" src="funcoes.js"></script>
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
-        <script>alert("Atenção este site está em fase de desenvolvimento não tem fins lucrativos é apenas um protótipo :)");</script>
+       <!-- <script>alert("Atenção este site está em fase de desenvolvimento não tem fins lucrativos é apenas um protótipo :)");</script> -->
 
     </head>
 
@@ -24,14 +24,38 @@
             <a href="index.html"><h1 class="logo"></h1></a>
         </header>
 
-            <input type="checkbox" id="check">
-            <label id="icone-menu" for="check"><img id="img-menu" src="img/btn_menu.png"></label>
+           <!--Parte do menu-->
+        <input type="checkbox" id="bt-menu">
+        <label for="bt-menu">&#9776;</label>
 
-               <!-- <nav class="menu">
-                    <button class="btn-fechar">Fechar</button>
-                    <ul> -->
-                <div class="barra">
-                  <nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="#">Criação de sites</a></li>
+                        <li><a href="#">Arte visual</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">HTML5 e CSS3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contato</a>
+                    <ul>
+                        <li><a href="#">E-mail</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5565981447713&text=Ol%C3%A1!%20Tudo%20bem?%20Sou%20o%20Luciano,%20deixe%20sua%20mensagem%20e%20entrarei%20em%20contato%20em%20breve." target="_blank">Wattsap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+                <!--  <nav class="menu">
                       <ul class="link">
                         <li><a class="link" href="index.html">Home</a></li>
                         <li><a class="link" href="#">Clientes</a></li>
@@ -40,10 +64,8 @@
                         <li><a class="link" href="#">Quem somos</a></li>
                         <li><a class="link" href="#">Contatos</a></li>
                       </ul>
-                </nav>
-            </div>
+                </nav>  -->
 
-        <section class="corpo">
             <div class="banner">
                 <div class="titulo">
                     <h2>Conheça nossas tecnologias</h2>
@@ -113,7 +135,6 @@
             </form>
 
         </section>
-    </section>
 
              <!-- RODAPÉ -->
 

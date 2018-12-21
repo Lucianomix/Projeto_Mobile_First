@@ -3,7 +3,7 @@
 * {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: times new roman, sans-serif;
 }
 
-.barra{float: right; margin-left: 100px;}
+.menu{width: 100%; height: 50px; z-index: 1; position: absolute;}
 
 body {background-color: #f5f5f5;}
 
@@ -33,16 +33,16 @@ img {max-width: 100%;}
 
 .logo {width: 50px; height: 50px; float: left; background: url(img/imagem1.png) center center/50px no-repeat;}
 
-#check {display: none;}
+/*
 
-#icone_menu {float: right; padding: 15px; z-index: 1;}
+#checkbox {display: none;}
 
-#img-menu { width: 50px; height: 50px; float: right; margin-left: 90%; margin-top: 10px; position: fixed;}
-.btn-menu {width: 50px; height: 50px; float: right; text-align: center; font-size: 2em; font-weight: 900; color: #fff; border-radius: 50px; cursor: pointer; background: linear-gradient(to right,#ce2e3c,#da6709); margin-right: 15px;}
+/*=========BOTÃO DO MENU===========*/
+ label[for="btn-menu"]{float: right; padding: 5px; text-align: center; font-size: 30px; cursor: pointer; width: 50px; height: 50px; display: none; background: linear-gradient(to right,#ce2e3c,#da6709); border-radius: 50px;}
 
 /*==========MENU==========*/
 
-.barra {width: 200px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-top: 90px; z-index: 1;}
+.menu {width: 100%; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-top: 90px; z-index: 1; position: absolute;}
 
 nav {width: 100%;}
 
@@ -55,14 +55,16 @@ nav a {text-decoration: none; display: block; margin-top:  2px;}
 .link:hover {font-size: 30px;}
 
 /*EVENTOS DO MENU*/
-#check:checked ~ .barra{transform: translateX(200px);}
+#checkbox:checked ~ .menu{transform: translateX(300px);}
 
-#check:checked ~ .barra nav a .link{opacity: 1;
+#checkbox:checked ~ .menu nav a .link{opacity: 1;
 transition-delay: 2s;}
+
+*/
 
 /*==========BANNER==========*/
 
-.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 100px; position: static;}
+.banner {width: 92%; margin-left: 15px; float: left; text-align: center; padding: 3% 4%; background-color: #3159ff; border-radius: 7px; margin-top: 100px;}
 
 .banner h2 {font-size: 2.5em; color: #fff; font-weight: 700;}
 .banner h3 {font-size: 1.5em; color: #fff; font-weight: 700; margin-top: 2%;}
@@ -111,18 +113,69 @@ transition-delay: 2s;}
 
 .redes-sociais a:hover {color: rgb(255,255,255);}
 
-/*TIPOS DE MEDIA
-screen = Para monitores ou dispositivos com telas coloridas e resolução adequada.
+   /*====ESTILO DO MENU======*/
 
-print = Para impressoras - muito usado para dar visão de impressão do site.
-*/
+
+.menu {width: 100%; height: 50px; background: rgba(34,34,34,0.7); font-family: 'Arial'; z-index: 1; position: absolute; float: right;}
+
+.menu ul {list-style: none; border-bottom: 2px solid #ccc; position: relative;}
+
+.menu ul li{width: 150px; float: left;}
+
+.menu a{padding: 15px; display: block; text-decoration: none; text-align: center; background: rgba(34,34,34,0.7); color: #fff;}
+
+.menu ul ul{position: absolute; visibility: hidden;}
+
+.menu ul li:hover ul{visibility: visible;}
+
+.menu a:hover{background-color: #f4f4f4; color: #555;}
+
+.menu ul ul li{float: none; border-bottom: solid 2px #ccc;}
+
+.menu ul ul li a{background-color: #069;}
+
+/*========BOTÃO MENU==================*/
+
+label[for="bt-menu"]{ padding: 5px; background-color: #222; color: #fff; font-family: "Arial"; text-align: center; font-size: 30px; cursor: pointer; width: 50px; height: 50px; display: none;}
+
+#bt-menu{display: none;}
+
+/*=====Tamanho da tela até 800px=======*/
+@media(max-width: 800px){
+
+    .menu{margin-top: 100px; margin-right: -80%; transition: all .4s; max-width: 50%; position: fixed;}
+
+    #bt-menu:checked ~ .menu{margin-right: -30%;}
+
+    .menu ul li{width: 100%; float: none;}
+
+    .menu ul ul{position: static; overflow: hidden; max-height: 0; transition: all .4s;}
+
+    .menu ul li:hover ul{height: auto; max-height: 200px;}
+
+    label[for="bt-menu"]{display: block; position: absolute; margin-top: 40px; margin-left: 90%; position: fixed;}
+}
 
 /*==========MOBILE FIRST==========*/
 
 /*==========SMARTPHONES até 400px==========*/
 
-@media screen and (max-width: 400px) {
-    .logo {float: left; margin-left: 10px;}
+
+
+
+/*
+
+@media(max-width: 400px) {
+
+    #checkbox{display: block;}
+
+    label[for="btn-menu"]{display: block;}
+
+    #checkbox:checked ~ .menu{margin-left: 0;}
+
+   .menu {background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-left: -100%; max-width: 50%;}
+
+    .logo {float: left; margin-left: 1px;}
 
     .banner {max-width: 92%; float: left; margin-top: 100px;}
 
@@ -131,19 +184,18 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
     .newsletter {max-width: 92%; float: left; margin-left: 15px; margin-bottom: 10px;}
 
     .newsletter button {float: left; margin-left: 0px;}
-
-    #img-menu {margin-left: 300px;}
-
-    .barra {width: 200px; background-color: rgba(16,16,16,0.6); transition: all .3s linear; margin-top: 90px; z-index: 1; position: fixed; margin-left: 200px;}
 }
+
+
 /*==========SMARTPHONES 480==========*/
+
 
 @media screen and (min-width: 400px) {
     .logo {width: 150px; height: 50px; margin-left: 20px; background: url(img/logo480.png) center/150px no-repeat;}
 
     .banner {margin-left: 20px;}
 
-    .barra {right: 300px;}
+    .menu {right: 200px;}
 }
 
 /*==========TABLETS 768==========*/
@@ -216,6 +268,8 @@ print = Para impressoras - muito usado para dar visão de impressão do site.
     .newsletter button {width: 28%; padding: 0%; float: right; margin-top: 0; height: 70px; text-align:center;}
     .newsletter input {width: 70%; padding: 0%; float: left; margin-top: 0; height: 70px; text-align:center; font-size: 14pt;}
 }
+
+*/
 
 /*===========ESTILO DA PAGINA DE MENSAGEM============*/
 
